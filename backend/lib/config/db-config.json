@@ -1,0 +1,17 @@
+{
+    "developmentPsql": {
+        "username": "postgres",
+        "password": "password",
+        "database": "packform",
+        "dialect": "postgres",
+        "protocol": "postgres",
+        "port": 5432,
+        "host": "localhost"
+    },
+    "developmentMongo": {
+        "database": "packform_mongodb",
+        "dialect": "mongodb",
+        "port": 27017,
+        "host": "localhost"
+    }
+}

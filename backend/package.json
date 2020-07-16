@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Alpha",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "mocha": "^8.0.1",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.24",
+    "neat-csv": "^5.2.0",
+    "pg": "^8.3.0",
+    "sequelize": "^6.3.3",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0",
+    "sql.js": "^1.3.0",
+    "sqlite3": "^5.0.0"
+  }
+}
