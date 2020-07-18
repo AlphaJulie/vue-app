@@ -2,7 +2,7 @@ const mongoose  =  require('mongoose');
   
 const customerCompany = new mongoose.Schema({  
     company_id:{  
-        type:String  
+        type:Number  
     },  
     company_name:{  
         type:String  

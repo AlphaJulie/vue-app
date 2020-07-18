@@ -3,8 +3,8 @@
 const neatCsv = require('neat-csv');
 const fs = require('fs');
 
-const customerModel    = require('../db/customer'); 
-const customerCompaniesModel = require('../db/customer_companies'); 
+const customerModel = require('../db/customer');
+const customerCompaniesModel = require('../db/customer_companies');
 
 class DataImportMongo {
 
@@ -32,10 +32,10 @@ class DataImportMongo {
         }
         const csvData = await neatCsv(data);
         if (model === 'customer') {
-            await customerModel.insertMany(csvData).catch(err => console.log(err));
+          await customerModel.insertMany(csvData).catch(err => console.log(err));
         } else if (model === 'customer_company') {
-            await customerCompaniesModel.insertMany(csvData).catch(err => console.log(err));
-          }
+          await customerCompaniesModel.insertMany(csvData).catch(err => console.log(err));
+        }
         return csvData;
       });
     } catch (err) {
